@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC Learning Book 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ABC.css">
+</head>
+<body>
+
+  <!-- Hidden inputs for CSS-only interactivity -->
+  <input type="checkbox" id="start" class="hidden-input">
+
+  <input type="radio" name="letter" id="a" class="hidden-input" checked>
+  <input type="radio" name="letter" id="b" class="hidden-input">
+  <input type="radio" name="letter" id="c" class="hidden-input">
+  <input type="radio" name="letter" id="d" class="hidden-input">
+  <input type="radio" name="letter" id="e" class="hidden-input">
+  <input type="radio" name="letter" id="f" class="hidden-input">
+  <input type="radio" name="letter" id="g" class="hidden-input">
+  <input type="radio" name="letter" id="h" class="hidden-input">
+  <input type="radio" name="letter" id="i" class="hidden-input">
+  <input type="radio" name="letter" id="j" class="hidden-input">
+  <input type="radio" name="letter" id="k" class="hidden-input">
+  <input type="radio" name="letter" id="l" class="hidden-input">
+  <input type="radio" name="letter" id="m" class="hidden-input">
+  <input type="radio" name="letter" id="n" class="hidden-input">
+  <input type="radio" name="letter" id="o" class="hidden-input">
+  <input type="radio" name="letter" id="p" class="hidden-input">
+  <input type="radio" name="letter" id="q" class="hidden-input">
+  <input type="radio" name="letter" id="r" class="hidden-input">
+  <input type="radio" name="letter" id="s" class="hidden-input">
+  <input type="radio" name="letter" id="t" class="hidden-input">
+  <input type="radio" name="letter" id="u" class="hidden-input">
+  <input type="radio" name="letter" id="v" class="hidden-input">
+  <input type="radio" name="letter" id="w" class="hidden-input">
+  <input type="radio" name="letter" id="x" class="hidden-input">
+  <input type="radio" name="letter" id="y" class="hidden-input">
+  <input type="radio" name="letter" id="z" class="hidden-input">
+
+  <!-- START SCREEN -->
+  <div class="start-screen">
+    <div class="floating-bg">
+      <span class="shape s1">💕</span>
+      <span class="shape s2">✨</span>
+      <span class="shape s3">☁️</span>
+      <span class="shape s4">💖</span>
+      <span class="shape s5">⭐</span>
+      <span class="shape s6">🌸</span>
+      <span class="shape s7">☁️</span>
+      <span class="shape s8">✨</span>
+    </div>
+
+    <div class="start-card">
+      <div class="start-emoji">📖</div>
+      <h1 class="start-title">ABC <span>Learning</span> Book</h1>
+      <p class="start-subtitle">A magical alphabet adventure for little ones 🌈</p>
+      <label for="start" class="start-btn">Start Learning ✨</label>
+      <p class="start-hint">Tap to begin your journey!</p>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div class="app">
+    <!-- Floating background -->
+    <div class="floating-bg">
+      <span class="shape s1">💕</span>
+      <span class="shape s2">✨</span>
+      <span class="shape s3">☁️</span>
+      <span class="shape s4">💖</span>
+      <span class="shape s5">⭐</span>
+      <span class="shape s6">🌸</span>
+      <span class="shape s7">☁️</span>
+      <span class="shape s8">✨</span>
+      <span class="shape s9">💕</span>
+      <span class="shape s10">⭐</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <label for="start" class="back-btn">🏠 Home</label>
+      <h2 class="header-title">My ABC Book 📚</h2>
+      <div class="spacer"></div>
+    </header>
+
+    <!-- Alphabet quick nav -->
+    <nav class="alphabet-nav">
+      <label for="a" class="alpha-btn">A</label>
+      <label for="b" class="alpha-btn">B</label>
+      <label for="c" class="alpha-btn">C</label>
+      <label for="d" class="alpha-btn">D</label>
+      <label for="e" class="alpha-btn">E</label>
+      <label for="f" class="alpha-btn">F</label>
+      <label for="g" class="alpha-btn">G</label>
+      <label for="h" class="alpha-btn">H</label>
+      <label for="i" class="alpha-btn">I</label>
+      <label for="j" class="alpha-btn">J</label>
+      <label for="k" class="alpha-btn">K</label>
+      <label for="l" class="alpha-btn">L</label>
+      <label for="m" class="alpha-btn">M</label>
+      <label for="n" class="alpha-btn">N</label>
+      <label for="o" class="alpha-btn">O</label>
+      <label for="p" class="alpha-btn">P</label>
+      <label for="q" class="alpha-btn">Q</label>
+      <label for="r" class="alpha-btn">R</label>
+      <label for="s" class="alpha-btn">S</label>
+      <label for="t" class="alpha-btn">T</label>
+      <label for="u" class="alpha-btn">U</label>
+      <label for="v" class="alpha-btn">V</label>
+      <label for="w" class="alpha-btn">W</label>
+      <label for="x" class="alpha-btn">X</label>
+      <label for="y" class="alpha-btn">Y</label>
+      <label for="z" class="alpha-btn">Z</label>
+    </nav>
+
+    <!-- Cards container -->
+    <main class="cards">
+      <!-- A -->
+      <div class="card card-a" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">A</div>
+          <div class="emoji-bounce">🍎</div>
+          <div class="word">Apple</div>
+          <div class="phonetic">/æ/ as in Apple</div>
+        </div>
+        <div class="card-nav">
+          <label for="z" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="b" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- B -->
+      <div class="card card-b" data-color="blue">
+        <div class="card-inner">
+          <div class="letter-big">B</div>
+          <div class="emoji-bounce">🐻</div>
+          <div class="word">Bear</div>
+          <div class="phonetic">/b/ as in Bear</div>
+        </div>
+        <div class="card-nav">
+          <label for="a" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="c" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="card card-c" data-color="lavender">
+        <div class="card-inner">
+          <div class="letter-big">C</div>
+          <div class="emoji-bounce">🐱</div>
+          <div class="word">Cat</div>
+          <div class="phonetic">/k/ as in Cat</div>
+        </div>
+        <div class="card-nav">
+          <label for="b" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="d" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- D -->
+      <div class="card card-d" data-color="mint">
+        <div class="card-inner">
+          <div class="letter-big">D</div>
+          <div class="emoji-bounce">🐶</div>
+          <div class="word">Dog</div>
+          <div class="phonetic">/d/ as in Dog</div>
+        </div>
+        <div class="card-nav">
+          <label for="c" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="e" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- E -->
+      <div class="card card-e" data-color="peach">
+        <div class="card-inner">
+          <div class="letter-big">E</div>
+          <div class="emoji-bounce">🐘</div>
+          <div class="word">Elephant</div>
+          <div class="phonetic">/ɛ/ as in Elephant</div>
+        </div>
+        <div class="card-nav">
+          <label for="d" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="f" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- F -->
+      <div class="card card-f" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">F</div>
+          <div class="emoji-bounce">🐸</div>
+          <div class="word">Frog</div>
+          <div class="phonetic">/f/ as in Frog</div>
+        </div>
+        <div class="card-nav">
+          <label for="e" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="g" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- G -->
+      <div class="card card-g" data-color="blue">
+        <div class="card-inner">
+          <div class="letter-big">G</div>
+          <div class="emoji-bounce">🦒</div>
+          <div class="word">Giraffe</div>
+          <div class="phonetic">/g/ as in Giraffe</div>
+        </div>
+        <div class="card-nav">
+          <label for="f" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="h" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- H -->
+      <div class="card card-h" data-color="lavender">
+        <div class="card-inner">
+          <div class="letter-big">H</div>
+          <div class="emoji-bounce">🦛</div>
+          <div class="word">Hippo</div>
+          <div class="phonetic">/h/ as in Hippo</div>
+        </div>
+        <div class="card-nav">
+          <label for="g" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="i" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- I -->
+      <div class="card card-i" data-color="mint">
+        <div class="card-inner">
+          <div class="letter-big">I</div>
+          <div class="emoji-bounce">🍦</div>
+          <div class="word">Ice Cream</div>
+          <div class="phonetic">/aɪ/ as in Ice</div>
+        </div>
+        <div class="card-nav">
+          <label for="h" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="j" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- J -->
+      <div class="card card-j" data-color="peach">
+        <div class="card-inner">
+          <div class="letter-big">J</div>
+          <div class="emoji-bounce">🪼</div>
+          <div class="word">Jellyfish</div>
+          <div class="phonetic">/dʒ/ as in Jelly</div>
+        </div>
+        <div class="card-nav">
+          <label for="i" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="k" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- K -->
+      <div class="card card-k" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">K</div>
+          <div class="emoji-bounce">🐨</div>
+          <div class="word">Koala</div>
+          <div class="phonetic">/k/ as in Koala</div>
+        </div>
+        <div class="card-nav">
+          <label for="j" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="l" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- L -->
+      <div class="card card-l" data-color="blue">
+        <div class="card-inner">
+          <div class="letter-big">L</div>
+          <div class="emoji-bounce">🦁</div>
+          <div class="word">Lion</div>
+          <div class="phonetic">/l/ as in Lion</div>
+        </div>
+        <div class="card-nav">
+          <label for="k" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="m" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- M -->
+      <div class="card card-m" data-color="lavender">
+        <div class="card-inner">
+          <div class="letter-big">M</div>
+          <div class="emoji-bounce">🐵</div>
+          <div class="word">Monkey</div>
+          <div class="phonetic">/m/ as in Monkey</div>
+        </div>
+        <div class="card-nav">
+          <label for="l" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="n" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- N -->
+      <div class="card card-n" data-color="mint">
+        <div class="card-inner">
+          <div class="letter-big">N</div>
+          <div class="emoji-bounce">🦄</div>
+          <div class="word">Narwhal</div>
+          <div class="phonetic">/n/ as in Narwhal</div>
+        </div>
+        <div class="card-nav">
+          <label for="m" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="o" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- O -->
+      <div class="card card-o" data-color="peach">
+        <div class="card-inner">
+          <div class="letter-big">O</div>
+          <div class="emoji-bounce">🦉</div>
+          <div class="word">Owl</div>
+          <div class="phonetic">/oʊ/ as in Owl</div>
+        </div>
+        <div class="card-nav">
+          <label for="n" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="p" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- P -->
+      <div class="card card-p" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">P</div>
+          <div class="emoji-bounce">🐼</div>
+          <div class="word">Panda</div>
+          <div class="phonetic">/p/ as in Panda</div>
+        </div>
+        <div class="card-nav">
+          <label for="o" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="q" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- Q -->
+      <div class="card card-q" data-color="blue">
+        <div class="card-inner">
+          <div class="letter-big">Q</div>
+          <div class="emoji-bounce">🐦</div>
+          <div class="word">Quail</div>
+          <div class="phonetic">/kw/ as in Quail</div>
+        </div>
+        <div class="card-nav">
+          <label for="p" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="r" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- R -->
+      <div class="card card-r" data-color="lavender">
+        <div class="card-inner">
+          <div class="letter-big">R</div>
+          <div class="emoji-bounce">🐰</div>
+          <div class="word">Rabbit</div>
+          <div class="phonetic">/r/ as in Rabbit</div>
+        </div>
+        <div class="card-nav">
+          <label for="q" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="s" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- S -->
+      <div class="card card-s" data-color="mint">
+        <div class="card-inner">
+          <div class="letter-big">S</div>
+          <div class="emoji-bounce">⭐</div>
+          <div class="word">Starfish</div>
+          <div class="phonetic">/s/ as in Star</div>
+        </div>
+        <div class="card-nav">
+          <label for="r" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="t" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- T -->
+      <div class="card card-t" data-color="peach">
+        <div class="card-inner">
+          <div class="letter-big">T</div>
+          <div class="emoji-bounce">🐯</div>
+          <div class="word">Tiger</div>
+          <div class="phonetic">/t/ as in Tiger</div>
+        </div>
+        <div class="card-nav">
+          <label for="s" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="u" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- U -->
+      <div class="card card-u" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">U</div>
+          <div class="emoji-bounce">🦄</div>
+          <div class="word">Unicorn</div>
+          <div class="phonetic">/juː/ as in Unicorn</div>
+        </div>
+        <div class="card-nav">
+          <label for="t" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="v" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- V -->
+      <div class="card card-v" data-color="blue">
+        <div class="card-inner">
+          <div class="letter-big">V</div>
+          <div class="emoji-bounce">🌋</div>
+          <div class="word">Volcano</div>
+          <div class="phonetic">/v/ as in Volcano</div>
+        </div>
+        <div class="card-nav">
+          <label for="u" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="w" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- W -->
+      <div class="card card-w" data-color="lavender">
+        <div class="card-inner">
+          <div class="letter-big">W</div>
+          <div class="emoji-bounce">🐳</div>
+          <div class="word">Whale</div>
+          <div class="phonetic">/w/ as in Whale</div>
+        </div>
+        <div class="card-nav">
+          <label for="v" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="x" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- X -->
+      <div class="card card-x" data-color="mint">
+        <div class="card-inner">
+          <div class="letter-big">X</div>
+          <div class="emoji-bounce">🎵</div>
+          <div class="word">Xylophone</div>
+          <div class="phonetic">/ks/ as in Xylophone</div>
+        </div>
+        <div class="card-nav">
+          <label for="w" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="y" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- Y -->
+      <div class="card card-y" data-color="peach">
+        <div class="card-inner">
+          <div class="letter-big">Y</div>
+          <div class="emoji-bounce">🐃</div>
+          <div class="word">Yak</div>
+          <div class="phonetic">/j/ as in Yak</div>
+        </div>
+        <div class="card-nav">
+          <label for="x" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="z" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+
+      <!-- Z -->
+      <div class="card card-z" data-color="pink">
+        <div class="card-inner">
+          <div class="letter-big">Z</div>
+          <div class="emoji-bounce">🦓</div>
+          <div class="word">Zebra</div>
+          <div class="phonetic">/z/ as in Zebra</div>
+        </div>
+        <div class="card-nav">
+          <label for="y" class="nav-btn prev-btn">⬅️ Prev</label>
+          <label for="a" class="nav-btn next-btn">Next ➡️</label>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      Made with 💕 for little learners
+    </footer>
+  </div>
+
+</body>
+</html>
